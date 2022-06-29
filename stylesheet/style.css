@@ -1,0 +1,429 @@
+/*Custom Fonts-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Eagle Lake');
+@import url('https://fonts.googleapis.com/css?family=Mallanna');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+
+h1{
+    font-family: 'Eagle Lake', Garamond, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 3em;
+    color:rgb(253, 177, 144);
+}
+
+h2{
+    font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 1.7em;
+    color:rgb(49, 41, 41);
+}
+
+h3{
+    font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    color:rgb(61,55,55);
+}
+
+h4{
+    font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 1.4em;
+    color:rgb(61,55,55);
+}
+
+h5{
+    font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;;
+    color:rgb(253, 177, 144);
+}
+
+p{
+    font-family: 'Merriweather', Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color:rgb(49, 41, 41);
+}
+
+
+/*Header CSS---------------------------------------*/
+
+header { grid-area: header; }
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(61,55,55);
+    width:100%;
+    height:125px;
+    padding: 5px
+}
+
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+
+nav{
+    background-image: linear-gradient(#413737, #665e5e);
+    text-align:center;
+    width:100%;
+	padding: 5px;
+}
+
+nav li a {
+    font-family: 'Eagle Lake', Garamond, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    color:rgb(242, 239, 219);
+    text-decoration: none;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 180px;
+}
+
+.nav_links li a{
+    transition: all 0.2s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:rgb(254,216,177);
+}
+
+/*Index.html CSS------------------------------------*/
+
+.event-section h2{
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 35%;
+  }
+  50% {
+    margin-left: 1000px;
+  }
+  100% {
+    margin-left: 35%;
+  }
+}
+
+.flex-container-events {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: center;
+	text-align: center;
+}
+
+.flex-container-events h3{
+	display:inline;
+    border: 3px solid #3D3737;
+	background-color: rgba(253, 177, 144, 0.2);
+    border-radius: 8px;
+    padding:6px;
+}
+
+.flex-container-events h4{
+	padding:10px;
+}
+
+.flex-container-realms img {
+	padding: 0px;
+	width: 500px;
+	height: 300px;
+	justify-content: space-between;
+}
+
+.flex-container-realms img:hover {
+  box-shadow: 0 0 10px 5px rgba(40, 37, 37, 0.5);
+}
+
+.flex-container-realms {
+	padding: 30px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: center;
+	text-align: center;
+}
+
+.flex-container-realms h2{
+	padding: 10px;
+}
+
+.flex-container-realms h3{
+	padding: 10px;
+}
+
+.flex-container-realms p{
+	padding: 2px;
+}
+
+/*Tickets.html CSS----------------------------------*/
+
+.tickets-individual { grid-area: ind; }
+.tickets-clan { grid-area: clan; }
+.tickets-guild {grid-area: guild;}
+.tickets-offers {grid-area: offers; }
+.tickets-gift {grid-area: gift; }
+
+.grid-container-parktickets {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+		'header header'
+		'nav nav'
+		'ind clan'
+		'guild offers'
+		'gift gift'
+		'footer footer';
+    grid-template-rows: auto auto;
+    flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: center;
+	text-align: center;
+}
+
+.grid-container-parktickets img:hover {
+  box-shadow: 0 0 10px 5px rgba(40, 37, 37, 0.5);
+}
+
+h1{
+    font-family: 'Eagle Lake', Garamond, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    color:rgb(253, 177, 144);
+}
+
+.tickets-individual {
+    padding:20px;
+}
+
+.tickets-clan {
+    padding:20px;
+}
+
+.tickets-guild {
+    padding:20px;
+}
+
+.tickets-offers {
+    padding:20px;
+}
+
+.tickets-gift {
+    padding:20px;
+}
+
+/*Parkinfo.html CSS----------------------------------*/
+
+.parkWelcomeInfo { grid-area: welcome; }
+.locationMap { grid-area: map; }
+.locationMap h2 {grid-area: maph2;}
+.parkHours {grid-area: hours;}
+.parkContact {grid-area: contact;}
+.parkMap {grid-area: pmap;}
+.parkMap h2 {grid-area: pmaph2;}
+.ridesList {grid-area: rides;}
+.servicesConcessions {grid-area: services;}
+
+.grid-container-parkinfo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+		'header header'
+		'nav nav'
+		'welcome welcome'
+		'maph2 maph2'
+		'map hours'
+		'map contact'
+		'pmaph2 pmaph2'
+		'pmap rides'
+		'pmap services'
+		'footer footer';
+	grid-template-rows: [row1-start] auto [row1-end] auto [third-line] 70px [fourth-line] 20px [fifth-line] auto [sixth-line] auto [seventh-line] 20px [eighth-line] auto [ninth-line] auto [last-line];
+ }
+
+.ridesList li {
+	list-style: circle;
+	font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;;
+    color:rgb(61,55,55);
+}
+
+.servicesConcessions li {
+	list-style: circle;
+	font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;;
+    color:rgb(61,55,55);
+}
+
+.parkContact li {
+	list-style: none;
+	font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;;
+    color:rgb(61,55,55);
+}
+
+.parkHours th {
+	font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;;
+    color:rgb(49, 41, 41);
+}
+
+.parkHours td {
+	font-family: 'Mallana', Verdana, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 15px;;
+    color:rgb(61,55,55);
+}
+
+.parkWelcomeInfo{
+	place-self: center;
+	display:inline;
+    border: 3px solid #3D3737;
+	background-color: rgba(253, 177, 144, 0.2);
+    border-radius: 8px;
+    padding:6px;
+}
+
+.parkHours {
+	align-self: start;
+	display:inline;
+    border: 3px solid #665e5e;
+	background-color: rgba(253, 177, 144, 0.05);
+    border-radius: 8px;
+    padding:20px;
+	width: 80%;
+    margin: 5px;
+}
+
+.parkContact {
+	align-self: start;
+	display:inline;
+    border: 3px solid #665e5e;
+	background-color: rgba(253, 177, 144, 0.05);
+    border-radius: 8px;
+    padding:30px;
+	width: 80%;
+    margin:5px;
+}
+
+.ridesList {
+	align-self: start;
+	display:inline;
+    border: 3px solid #665e5e;
+	background-color: rgba(253, 177, 144, 0.05);
+    border-radius: 8px;
+    padding:30px;
+	width: 80%;
+    margin: 5px;
+}
+
+.servicesConcessions {
+	align-self: start;
+	display:inline;
+    border: 3px solid #665e5e;
+	background-color: rgba(253, 177, 144, 0.05);
+    border-radius: 8px;
+    padding:30px;
+	width: 80%;
+    margin: 5px;
+}
+
+.locationMap>img {
+	object-fit: cover;
+	width: 95%;
+	height: 410px;
+}
+
+.locationMap {
+	align-self: center;
+}
+
+.parkMap>img {
+	object-fit: cover;
+	width: 95%;
+	height: 780px;
+}
+
+.parkMap {
+	align-self: start;
+}
+
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+
+footer
+{
+    background-image: linear-gradient(#665e5e, #413737);
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+
+footer li{
+    font-family: 'Eagle Lake', Garamond, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;;
+    color:rgb(242, 239, 219);
+}
